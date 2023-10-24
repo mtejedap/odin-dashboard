@@ -49,13 +49,24 @@ body {
     gap: 16px;
 }
 
-svg {
+.sidebar svg {
     fill: white;
 }
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 32px;
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
+}
+
+input {
+    width: 700px;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: rgb(226, 232, 240);
+    border-style: none;
 }
 
 .content {
@@ -136,4 +147,46 @@ svg {
 
 .user>div>:nth-child(2) {
     color: rgb(119, 119, 119);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search>div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttons,
+.buttons>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttons>div:first-child {
+    gap: 16px;
+}
+
+.buttons>div:last-child {
+    gap: 32px;
+}
+
+.buttons button {
+    color: white;
+    background-color: rgb(25, 146, 212);
+    border-style: none;
+    border-radius: 16px;
+    padding: 8px 32px;
+    font-size: 16px;
+}
+
+.buttons p:last-child {
+    font-size: 24px;
+
 }
